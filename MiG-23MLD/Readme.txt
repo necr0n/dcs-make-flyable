@@ -1,0 +1,1 @@
+https://forums.eagle.ru/showthread.php?t=232050&page=28 is the proper MiG-23.
