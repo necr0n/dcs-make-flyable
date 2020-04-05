@@ -9,13 +9,13 @@ Many individual mods exist out there for DCS for individual aircraft (Su-34, Su-
 The goal of this project is to add all AI aircraft as flyable and with selectable cockpits (Su-25T/FC3/Viggen/Ka50 etc.) passing the integrity check. Even just to taxi/take off.
 
 # How to use it?
-Click on the green Clone or download button, download .ZIP
+* Click on the green Clone or download button, download .ZIP
 
-Go to your user \Saved Games\DCS\Mods\aircraft folder (for example C:\Users\your_username\Saved Games\DCS\Mods\aircraft). If you don't have that folder, create it.
+* Go to your user \Saved Games\DCS\Mods\aircraft folder (for example C:\Users\your_username\Saved Games\DCS\Mods\aircraft). If you don't have that folder, create it.
 
-Unzip archive content inside "aircraft" folder.
+* Unzip archive content inside "aircraft" folder.
 
-Run ps.bat installer script
+* Run ps.bat installer script
 
 # Why should I run some .bat file? I'm more comfortable running an .exe installer
 There's benefit in a .bat file - it's open source, you can take a look inside and see what it does. Antivirus scanners will ensure that it contains no viruses.
