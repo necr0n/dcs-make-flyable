@@ -10,8 +10,11 @@ The goal of this project is to add all AI aircraft as flyable and with selectabl
 
 # How to use it?
 Click on the green Clone or download button, download .ZIP
+
 Go to your user \Saved Games\DCS\Mods\aircraft folder (for example C:\Users\your_username\Saved Games\DCS\Mods\aircraft). If you don't have that folder, create it.
+
 Unzip archive content inside "aircraft" folder.
+
 Run ps.bat installer script
 
 # Why should I run some .bat file? I'm more comfortable running an .exe installer
