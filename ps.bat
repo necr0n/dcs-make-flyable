@@ -44,6 +44,44 @@ echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Su-24MR\Input\Su-24MR\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Su-24MR\Input\Su-24MR\keyboard || echo %_errormsg%
 echo;
+:: Tu-22M3
+echo;
+echo Starting Tu-22M3 configuration
+echo;
+echo High fidelity model, as of now only with Su-25T avionics. Will add Viggen avionics when I have it.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-22M3\Input\Tu-22M3\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-22M3\Input\Tu-22M3\keyboard || echo %_errormsg%
+echo;
+:: Tu-95MS
+echo;
+echo Starting Tu-95MS configuration. 2 engines out of 4 are used due to absense of an avionics with >2 engines.
+echo;
+echo Low fidelity model, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-95MS\Input\Tu-95MS\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-95MS\Input\Tu-95MS\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Tu-142
+echo;
+echo Starting Tu-142 configuration
+echo;
+echo Low fidelity model, as of now only with Su-25T avionics. 2 engines out of 4 are used due to absense of an avionics with >2 engines.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-142\Input\Tu-142\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-142\Input\Tu-142\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Tu-160
+echo;
+echo Starting Tu-160 configuration
+echo;
+echo Low fidelity model, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-160\Input\Tu-160\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-160\Input\Tu-160\keyboard || echo %_errormsg%
+echo;
 :: Su-25TM
 echo;
 echo Starting Su-25TM configuration
@@ -66,24 +104,54 @@ CHOICE /C 12 /M "Press 1 to choose Su-27 avionics, 2 for default Su-25T avionics
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Su-25TM\Input\su-25TM\keyboard || echo %_errormsg%
    )
 echo;
+:: Su-34
+echo;
+echo Starting Su-34 configuration
+echo;
+echo Choose between default Su-25T(recommended) or Su-27 avionics.^
+ With Su-25T avionics you get the possibility to use powerful laser-guided bombs KAB500L, KAB1500L, KAB-1500LG-Pr.^
+ KAB1500kr, KAB500s and some other bombs don't work even with LA override.
+echo;
+echo Su-33 avionics allows to use KH-31P, R-27 and R-77 series missiles. However, laser designator/TV is no longer available.^
+ In order to launch KH-31P use LAlt+W (Launch override) when in proximity to enemy ship.^
+ KH-31A/KH-35/KH-59 anti ship missiles do not work as there's no air-to-ground radar in default Su-25T or any FC3 planes.
+echo;
+CHOICE /C 12 /M "Press 1 to choose Su-25T avionics, 2 for Su-33 avionics"
+ if %ERRORLEVEL% EQU 1 (
+   copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su25Tavionics.lua" Su-34\entry.lua
+   copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su25Tcockpit.lods" Su-34\Shapes\Cockpit_Su-34.lods
+   copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su25Tmirrors.lua" Su-34\Liveries\Cockpit_Su-34\default\description.lua
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Su-34\Input\Su-34\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Su-34\Input\Su-34\keyboard || echo %_errormsg%
+   )
+ if %ERRORLEVEL% EQU 2 (
+   copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su33avionics.lua" Su-34\entry.lua
+   copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su33cockpit.lods" Su-34\Shapes\Cockpit_Su-34.lods
+   copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su33mirrors.lua" Su-34\Liveries\Cockpit_Su-34\default\description.lua
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-25T\joystick\*.lua"  Su-25TM\Input\su-25TM\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-25T\keyboard\*.lua"  Su-25TM\Input\su-25TM\keyboard || echo %_errormsg%
+   )
+echo;
 :: MiG-31
 echo;
 echo Starting MiG-31 configuration
 echo;
-echo Choose between default MiG-29 or Su-27 avionics.^
- With MiG-29 avionics you basically get the same default MiG-29 with working indicators, incl. fuel.
+echo Choose between default MiG-29 or Su-27 cockpit/avionics.^
+ With MiG-29 avionics you basically get more authentic MiG-29 cockpit.
 echo However, Mig-29 radar is really poor for MiG-31, so Su-27 avionics helps a little.^
  In order to launch R-33/R40 use LAlt+W (Launch override) after getting normal radar lock.
 echo;
 CHOICE /C 12 /M "Press 1 to choose MiG-29 avionics, 2 for Su-27 avionics"
  if %ERRORLEVEL% EQU 1 (
    copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_MiG29avionics.lua" MiG-31\entry.lua
+   copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_MiG29cockpit.lods" MiG-31\Shapes\Cockpit_MiG-31.lods
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-31\Input\MiG-31\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-31\Input\MiG-31\keyboard || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Cockpit\Shape\cockpit_mig-29s.edm.ilv" MiG-31\Shapes\Cockpit_MiG-31.edm.ilv || echo %_errormsg%
    )
  if %ERRORLEVEL% EQU 2 (
    copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su27avionics.lua" MiG-31\entry.lua
+   copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su27cockpit.lods" MiG-31\Shapes\Cockpit_MiG-31.lods
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-27\joystick\*.lua"  MiG-31\Input\MiG-31\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-27\keyboard\*.lua"  MiG-31\Input\MiG-31\keyboard || echo %_errormsg%
    )
