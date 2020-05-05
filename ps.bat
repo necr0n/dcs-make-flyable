@@ -55,12 +55,22 @@ echo;
 echo;
 :: Tu-95MS
 echo;
-echo Starting Tu-95MS configuration
+echo Starting Tu-95MS configuration. 2 engines out of 4 are used due to absense of an avionics with >2 engines.
 echo;
 echo Low fidelity model, as of now only with Su-25T avionics.
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-95MS\Input\Tu-95MS\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-95MS\Input\Tu-95MS\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Tu-142
+echo;
+echo Starting Tu-142 configuration
+echo;
+echo Low fidelity model, as of now only with Su-25T avionics. 2 engines out of 4 are used due to absense of an avionics with >2 engines.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-142\Input\Tu-142\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-142\Input\Tu-142\keyboard || echo %_errormsg%
 echo;
 echo;
 :: Tu-160
