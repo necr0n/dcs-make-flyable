@@ -3,7 +3,7 @@ All AI aircraft made flyable as mods using already available flight models and c
 
 # What's this about?
 Many individual mods exist out there for DCS for individual aircraft (Su-34, Su-35, B-1B, etc.) Not all of them are updated for actual DCS version (2.5+). There are basically two options for mods:
-- passing the integrity check and flying with weapons that don't work if they're not supported by the SFM/AFM
+- passing the integrity check and flying with weapons that don't work if they're not supported by already available avionics
 - creating a plane with a new name that doesn't exist in the default DCS library (what VSN team is doing)
 
 The goal of this project is to add all AI aircraft as flyable and with selectable cockpits (Su-25T/FC3/Viggen/Ka50 etc.) passing the integrity check. Even just to taxi/take off. There's no point in having 10 people making same AI mods, time would be better spent on:
