@@ -1,1 +1,1 @@
-return _('IL-78M')
+return _('IL-76MD')
