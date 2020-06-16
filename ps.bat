@@ -16,6 +16,46 @@ CHOICE /C YN /M "Is this correct? Press Y for Yes, N for No"
 if %ERRORLEVEL% EQU 2 for /f "delims=" %%I in ('powershell -noprofile "iex (${%~f0} | out-string)"') do set "_DCS=%%I"
 :: Starting planes configuration
 echo;
+:: A-50
+echo;
+echo Starting A-50 configuration
+echo;
+echo High fidelity model, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  A-50\Input\A-50\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  A-50\Input\A-50\keyboard || echo %_errormsg%
+echo;
+echo;
+:: An-26B
+echo;
+echo Starting An-26B configuration
+echo;
+echo High fidelity model, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  An-26B\Input\An-26B\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  An-26B\Input\An-26B\keyboard || echo %_errormsg%
+echo;
+echo;
+:: An-30M
+echo;
+echo Starting An-30M configuration
+echo;
+echo High fidelity model, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  An-30M\Input\An-30M\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  An-30M\Input\An-30M\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Yak-40
+echo;
+echo Starting Yak-40 configuration
+echo;
+echo High fidelity model, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Yak-40\Input\Yak-40\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Yak-40\Input\Yak-40\keyboard || echo %_errormsg%
+echo;
+echo;
 :: Su-17M4
 echo;
 echo Starting Su-17M4 configuration
@@ -43,6 +83,16 @@ echo High fidelity model, as of now only with Su-25T avionics. Reconnaisance pla
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Su-24MR\Input\Su-24MR\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Su-24MR\Input\Su-24MR\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Su-30
+echo;
+echo Starting Su-30 configuration
+echo;
+echo Low fidelity model, as of now only with Su-27 avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-27\joystick\*.lua"  Su-30\Input\Su-30\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-27\keyboard\*.lua"  Su-30\Input\Su-30\keyboard || echo %_errormsg%
 echo;
 :: Tu-22M3
 echo;
@@ -81,6 +131,26 @@ echo Low fidelity model, as of now only with Su-25T avionics.
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  Tu-160\Input\Tu-160\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  Tu-160\Input\Tu-160\keyboard || echo %_errormsg%
+echo;
+echo;
+:: IL-76MD
+echo;
+echo Starting IL-76MD configuration
+echo;
+echo High fidelity model, transport, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  IL-76MD\Input\IL-76MD\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  IL-76MD\Input\IL-76MD\keyboard || echo %_errormsg%
+echo;
+echo;
+:: IL-78M
+echo;
+echo Starting IL-78M configuration
+echo;
+echo High fidelity model, transport, as of now only with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  IL-78M\Input\IL-78M\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  IL-78M\Input\IL-78M\keyboard || echo %_errormsg%
 echo;
 :: Su-25TM
 echo;
