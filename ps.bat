@@ -235,7 +235,6 @@ echo As of now only with MiG-29 avionics. R40s aren't long range rockets.^
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-25PD\Input\MiG-25PD\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-25PD\Input\MiG-25PD\keyboard || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Cockpit\Shape\cockpit_mig-29s.edm.ilv" MiG-25PD\Shapes\Cockpit_MiG-25PD.edm.ilv || echo %_errormsg%
 echo;
 :: MiG-25RBT
 echo;
@@ -245,7 +244,6 @@ echo As of now only with MiG-29 avionics.
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-25RBT\Input\MiG-25RBT\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-25RBT\Input\MiG-25RBT\keyboard || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Cockpit\Shape\cockpit_mig-29s.edm.ilv" MiG-25RBT\Shapes\Cockpit_MiG-25RBT.edm.ilv || echo %_errormsg%
 echo;
 :: MiG-27K
 echo;
@@ -255,7 +253,6 @@ echo As of now only with MiG-29 avionics.
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-27K\Input\MiG-27K\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-27K\Input\MiG-27K\keyboard || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Cockpit\Shape\cockpit_mig-29s.edm.ilv" MiG-27K\Shapes\Cockpit_MiG-27K.edm.ilv || echo %_errormsg%
 echo;
 :: MiG-23MLD
 echo;
@@ -265,7 +262,6 @@ echo As of now only with MiG-29 avionics. "https://forums.eagle.ru/showthread.ph
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-23MLD\Input\MiG-23MLD\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-23MLD\Input\MiG-23MLD\keyboard || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Cockpit\Shape\cockpit_mig-29s.edm.ilv" MiG-23MLD\Shapes\Cockpit_MiG-23MLD.edm.ilv || echo %_errormsg%
 echo Installation complete
 CHOICE /C Q /N /M "Press Q to quit"
 :END
