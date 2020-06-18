@@ -217,7 +217,6 @@ CHOICE /C 12 /M "Press 1 to choose MiG-29 avionics, 2 for Su-27 avionics"
    copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_MiG29cockpit.lods" MiG-31\Shapes\Cockpit_MiG-31.lods
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-31\Input\MiG-31\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-31\Input\MiG-31\keyboard || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Cockpit\Shape\cockpit_mig-29s.edm.ilv" MiG-31\Shapes\Cockpit_MiG-31.edm.ilv || echo %_errormsg%
    )
  if %ERRORLEVEL% EQU 2 (
    copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su27avionics.lua" MiG-31\entry.lua
