@@ -206,12 +206,12 @@ echo;
 echo;
 echo Starting MiG-31 configuration
 echo;
-echo Choose between default MiG-29 or Su-27 cockpit/avionics.^
+echo Choose between default MiG-29 or Su-33 cockpit/avionics.^
  With MiG-29 avionics you basically get more authentic MiG-29 cockpit.
-echo However, Mig-29 radar is really poor for MiG-31, so Su-27 avionics helps a little.^
+echo However, Mig-29 radar is really poor for MiG-31, so Su-33 avionics helps a little.^
  In order to launch R-33/R40 use LAlt+W (Launch override) after getting normal radar lock.
 echo;
-CHOICE /C 12 /M "Press 1 to choose MiG-29 avionics, 2 for Su-27 avionics"
+CHOICE /C 12 /M "Press 1 to choose MiG-29 avionics, 2 for Su-33 avionics"
  if %ERRORLEVEL% EQU 1 (
    copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_MiG29avionics.lua" MiG-31\entry.lua
    copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_MiG29cockpit.lods" MiG-31\Shapes\Cockpit_MiG-31.lods
@@ -219,10 +219,10 @@ CHOICE /C 12 /M "Press 1 to choose MiG-29 avionics, 2 for Su-27 avionics"
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-31\Input\MiG-31\keyboard || echo %_errormsg%
    )
  if %ERRORLEVEL% EQU 2 (
-   copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su27avionics.lua" MiG-31\entry.lua
-   copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su27cockpit.lods" MiG-31\Shapes\Cockpit_MiG-31.lods
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-27\joystick\*.lua"  MiG-31\Input\MiG-31\joystick || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-27\keyboard\*.lua"  MiG-31\Input\MiG-31\keyboard || echo %_errormsg%
+   copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su33avionics.lua" MiG-31\entry.lua
+   copy /V /L /Y "make_flyable_base\MiG-31\MiG-31_Su33cockpit.lods" MiG-31\Shapes\Cockpit_MiG-31.lods
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-33\joystick\*.lua"  MiG-31\Input\MiG-31\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-33\keyboard\*.lua"  MiG-31\Input\MiG-31\keyboard || echo %_errormsg%
    )
 echo;
 :: MiG-25PD
