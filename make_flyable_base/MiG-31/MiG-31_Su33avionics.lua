@@ -50,5 +50,5 @@ mount_vfs_model_path    (current_mod_path ..  "/Shapes")
 mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
 dofile(current_mod_path.."/Views.lua")
 make_view_settings('MiG-31', ViewSettings, SnapViews)
-make_flyable('MiG-31', current_mod_path..'/Cockpit/Scripts_SFM/', {nil,old = 3}, current_mod_path..'/comm.lua') --working SFM, working HUD
+make_flyable('MiG-31', current_mod_path..'/Cockpit/Scripts_SFM/', {nil,old = 4}, current_mod_path..'/comm.lua') --working SFM, working HUD
 plugin_done()
