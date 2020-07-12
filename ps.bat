@@ -198,8 +198,8 @@ CHOICE /C 12 /M "Press 1 to choose Su-25T avionics, 2 for Su-33 avionics"
    copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su33avionics.lua" Su-34\entry.lua
    copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su33cockpit.lods" Su-34\Shapes\Cockpit_Su-34.lods
    copy /V /L /Y "make_flyable_base\Su-34\Su-34_Su33mirrors.lua" Su-34\Liveries\Cockpit_Su-34\default\description.lua
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-25T\joystick\*.lua"  Su-25TM\Input\su-25TM\joystick || echo %_errormsg%
-   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-25T\keyboard\*.lua"  Su-25TM\Input\su-25TM\keyboard || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-33\joystick\*.lua"  Su-34\Input\Su-34\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-33\keyboard\*.lua"  Su-34\Input\Su-34\keyboard || echo %_errormsg%
    )
 echo;
 :: MiG-31
