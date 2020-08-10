@@ -11,6 +11,9 @@ The goal of this project is to add all AI aircraft as flyable and with selectabl
 - developing air-to-ground radar
 - enabling all the weapons available
 
+# Which planes are worth flying?
+Planes that have a nice model or mostly working avionics. Su-24M, Su-34, B-1B, MiG-31, MQ-1A Predator, MQ-9 Reaper, Tu-22M3.
+
 # How to use it?
 * Click on the green Clone or download button, download .ZIP
 
