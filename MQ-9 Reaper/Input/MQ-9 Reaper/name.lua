@@ -1,0 +1,1 @@
+return _('MQ-9 Reaper')
