@@ -1,0 +1,1 @@
+return _('KC135MPRS')

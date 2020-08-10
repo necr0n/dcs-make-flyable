@@ -1,0 +1,1 @@
+return _('MQ-1A Predator')

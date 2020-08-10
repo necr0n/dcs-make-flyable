@@ -1,0 +1,1 @@
+Fuel tanker, as of now with A-10 cockpit, no refueling options.
