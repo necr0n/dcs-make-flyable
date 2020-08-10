@@ -261,6 +261,278 @@ echo As of now only with MiG-29 avionics. "https://forums.eagle.ru/showthread.ph
 echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\joystick\*.lua"  MiG-23MLD\Input\MiG-23MLD\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\mig-29c\keyboard\*.lua"  MiG-23MLD\Input\MiG-23MLD\keyboard || echo %_errormsg%
+echo;
+echo;
+:: B-52H
+echo;
+echo Starting B-52H configuration
+echo;
+echo Low poly model, as of now only with A-10A avionics.
+echo AGM-86C don't work.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  B-52H\Input\B-52H\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  B-52H\Input\B-52H\keyboard || echo %_errormsg%
+echo;
+echo;
+:: C-17A
+echo;
+echo Starting C-17A configuration
+echo;
+echo Low poly transport, as of now only with A-10A avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  C-17A\Input\C-17A\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  C-17A\Input\C-17A\keyboard || echo %_errormsg%
+echo;
+echo;
+:: C-130
+echo;
+echo Starting C-130 configuration
+echo;
+echo High poly transport, as of now only with A-10A avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  C-130\Input\C-130\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  C-130\Input\C-130\keyboard || echo %_errormsg%
+echo;
+echo;
+:: E-2C
+echo;
+echo Starting E-2C configuration
+echo;
+echo High poly AWACS, as of now only with F-15C avionics.
+echo AWACS is working, radar is working as well.
+echo Something's wrong with the collision model - no collision on carriers
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\f-15c\joystick\*.lua"  E-2C\Input\E-2C\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\f-15c\keyboard\*.lua"  E-2C\Input\E-2C\keyboard || echo %_errormsg%
+echo;
+echo;
+:: E-3A
+echo;
+echo Starting E-3A configuration
+echo;
+echo High poly AWACS, as of now only with F-15C avionics.
+echo AWACS is working, radar is working as well.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\f-15c\joystick\*.lua"  E-3A\Input\E-3A\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\f-15c\keyboard\*.lua"  E-3A\Input\E-3A\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-4E
+echo;
+echo Starting F-4E configuration
+echo;
+echo There's no obvious way to set the input profile different from Su-25T.
+echo Therefore adding the Su-25T cockpit as well.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-4E\Input\F-4E\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-4E\Input\F-4E\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-14A
+echo;
+echo Starting F-14A configuration
+echo;
+echo Crashes DCS while F-15 cockpit is set and long-range missiles are loaded.
+echo Su-33 cockpit is used.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-33\joystick\*.lua"  F-14A\Input\F-14A\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\su-33\keyboard\*.lua"  F-14A\Input\F-14A\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-15E
+echo;
+echo Starting F-15E configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics with limited weapons support - at least AIM-120B/C, GBU-31/38 aren't working.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-15E\Input\F-15E\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-15E\Input\F-15E\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-16A
+echo;
+echo Starting F-16A configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics with limited weapons support - at least AIM-120B/C, GBU-31/38 aren't working.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-16A\Input\F-16A\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-16A\Input\F-16A\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-16A MLU
+echo;
+echo Starting F-16A MLU configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics with limited weapons support - at least AIM-120B/C, GBU-31/38 aren't working.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-16A MLU\Input\F-16A MLU\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-16A MLU\Input\F-16A MLU\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-16C bl.50
+echo;
+echo Starting F-16C bl.50 configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics. No weapons are available and cockpit isn't set correctly.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-16C bl.50\Input\F-16C bl.50\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-16C bl.50\Input\F-16C bl.50\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-16C bl.52d
+echo;
+echo Starting F-16C bl.52d configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics. No weapons are available and cockpit isn't set correctly.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-16C bl.52d\Input\F-16C bl.52d\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-16C bl.52d\Input\F-16C bl.52d\keyboard || echo %_errormsg%
+echo;
+echo;
+:: F-117A
+echo;
+echo Starting F-117A configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  F-117A\Input\F-117A\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  F-117A\Input\F-117A\keyboard || echo %_errormsg%
+echo;
+echo;
+:: FA-18A
+echo;
+echo Starting FA-18A configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics. No weapons are available and cockpit isn't set correctly.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  FA-18A\Input\FA-18A\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  FA-18A\Input\FA-18A\keyboard || echo %_errormsg%
+echo;
+echo;
+:: KC130
+echo;
+echo Starting KC130 configuration
+echo;
+echo Fuel tanker, as of now with A-10 cockpit, no refueling options.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  KC130\Input\KC130\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  KC130\Input\KC130\keyboard || echo %_errormsg%
+echo;
+echo;
+:: KC-135
+echo;
+echo Starting KC-135 configuration
+echo;
+echo Fuel tanker, as of now with A-10 cockpit, no refueling options.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  KC-135\Input\KC-135\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  KC-135\Input\KC-135\keyboard || echo %_errormsg%
+echo;
+echo;
+:: KC135MPRS
+echo;
+echo Starting KC135MPRS configuration
+echo;
+echo Fuel tanker, as of now with A-10 cockpit, no refueling options.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  KC135MPRS\Input\KC135MPRS\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  KC135MPRS\Input\KC135MPRS\keyboard || echo %_errormsg%
+echo;
+echo;
+:: MQ-1A Predator
+echo;
+echo Starting MQ-1A Predator configuration
+echo;
+echo UAV with good AG rockets, as of now with Su-25T avionics.
+echo Uncomment line in entry.lua to enable the cockpit.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  MQ-1A Predator\Input\MQ-1A Predator\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  MQ-1A Predator\Input\MQ-1A Predator\keyboard || echo %_errormsg%
+echo;
+echo;
+:: MQ-9 Reaper
+echo;
+echo Starting MQ-9 Reaper configuration
+echo;
+echo UAV with good AG rockets, as of now with Su-25T avionics.
+echo Uncomment line in entry.lua to enable the cockpit.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  MQ-9 Reaper\Input\MQ-9 Reaper\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  MQ-9 Reaper\Input\MQ-9 Reaper\keyboard || echo %_errormsg%
+echo;
+echo;
+:: S-3B
+echo;
+echo Starting S-3B configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics with limited weapons support - at least AIM-120B/C, GBU-31/38 aren't working.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  S-3B\Input\S-3B\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  S-3B\Input\S-3B\keyboard || echo %_errormsg%
+echo;
+echo;
+:: S-3B Tanker
+echo;
+echo Starting S-3B Tanker configuration
+echo;
+echo Because of missing Input profile, plane has only Su-25T inputs, same as F-4E.
+echo That forces us to use Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  S-3B Tanker\Input\S-3B Tanker\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  S-3B Tanker\Input\S-3B Tanker\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Tornado GR4
+echo;
+echo Starting Tornado GR4 configuration
+echo;
+echo With A-10 cockpit. Most weapons are not functional (ALARM, Sea Eagle, GBU16/27).
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  Tornado GR4\Input\Tornado GR4\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  Tornado GR4\Input\Tornado GR4\keyboard || echo %_errormsg%
+echo;
+echo;
+:: Tornado IDS
+echo;
+echo Starting Tornado IDS configuration
+echo;
+echo With A-10 cockpit. With A-10 cockpit. Most weapons are not functional (Kormoran, AGM-88C, GBU16).
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  Tornado IDS\Input\Tornado IDS\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  Tornado IDS\Input\Tornado IDS\keyboard || echo %_errormsg%
+echo;
+echo;
+:: B-1B
+echo;
+echo Starting B-1B configuration
+echo;
+echo Choose between A-10A or Su-25T cockpit/avionics.
+echo With A-10A cockpit, no matter what are the ripple/QTY settings, only 2 stations are releasing the weapons simultaneously.
+echo AGM-154C don't work.
+CHOICE /C 12 /M "Press 1 to choose A-10A avionics, 2 for Su-25T avionics"
+ if %ERRORLEVEL% EQU 1 (
+   copy /V /L /Y "make_flyable_base\B-1B\B-1B_A-10avionics.lua" B-1B\entry.lua
+   copy /V /L /Y "make_flyable_base\B-1B\B-1B_A-10cockpit.lods" B-1B\Shapes\Cockpit_B-1B.lods
+   copy /V /L /Y "make_flyable_base\B-1B\B-1B_A-10mirrors.lua" B-1B\Liveries\Cockpit_B-1B\default\description.lua
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\joystick\*.lua"  B-1B\Input\B-1B\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Flaming Cliffs\Input\a-10a\keyboard\*.lua"  B-1B\Input\B-1B\keyboard || echo %_errormsg%
+   )
+ if %ERRORLEVEL% EQU 2 (
+   copy /V /L /Y "make_flyable_base\B-1B\B-1B_Su25Tavionics.lua" B-1B\entry.lua
+   copy /V /L /Y "make_flyable_base\B-1B\B-1B_Su25Tcockpit.lods" B-1B\Shapes\Cockpit_B-1B.lods
+   copy /V /L /Y "make_flyable_base\B-1B\B-1B_Su25Tmirrors.lua" B-1B\Liveries\Cockpit_B-1B\default\description.lua
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  B-1B\Input\B-1B\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  B-1B\Input\B-1B\keyboard || echo %_errormsg%
+   )
+echo;
 echo Installation complete
 CHOICE /C Q /N /M "Press Q to quit"
 :END

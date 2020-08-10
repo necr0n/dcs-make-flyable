@@ -1,0 +1,1 @@
+With A-10 cockpit. Most weapons are not functional (Kormoran, AGM-88C, GBU16).
