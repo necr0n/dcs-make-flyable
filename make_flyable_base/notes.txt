@@ -1,0 +1,11 @@
+$1 = 'A-50', 'An-26B', 'An-30M', 'Yak-40'
+
+foreach ($element in $1) {Copy-Item -wi -Path "./test_dir" -Destination "./$element" -Recurse; cd ./$element; Get-ChildItem -recurse | % {rni   -Path $_.PSPath -NewName ($_.Name -replace 'var', $element)}; cd "C:\Users\user\Saved Games\DCS\Mods\aircraft"}
+
+Get-ChildItem -recurse | % {rni -wi -Path $_.PSPath -NewName ($_.Name -replace 'Tu-160', $1)}
+
+Head_Type 5 weapons (not addressed by FC3):
+Kh-22, Kh-59M,Kh-29T,Kh-29TE,Kh-55,Kh-31A, Kh-35, Kh-41, AGM-65K, AGM-65D, AGM-65H, AGM-65G, TGM-65G, TGM-65D, CATM-65K, TGM-65H, AGM-84A, AGM-84E, AGM-86, AGM-130, Sea Eagle, Kormoran, AGM-119, P-35
+DCSWorld\Scripts\Database\Weapons\missiles_data.lua
+
+KAB500L, KAB1500L, FAB1500 M54, KAB-1500LG-Pr normal dispense without override, KAB500kr with override, KAB1500kr, KAB500s no launch with LA
