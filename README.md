@@ -15,7 +15,7 @@ The goal of this project is to add all AI aircraft as flyable and with selectabl
 Planes that have a nice model or mostly working avionics. Su-24M, Su-34, B-1B, MiG-31, MQ-1A Predator, MQ-9 Reaper, Tu-22M3.
 
 # How to use it?
-* Click on the green Clone or download button, download .ZIP
+* Click on the green Code button, download .ZIP
 
 * Go to your user \Saved Games\DCS\Mods\aircraft folder (for example C:\Users\your_username\Saved Games\DCS\Mods\aircraft). If you don't have that folder, create it.
 
