@@ -44,6 +44,8 @@ LogBook =
 	},	
 })
 
+net_animation ={7,} --wing sweep sync
+
 mount_vfs_texture_path(current_mod_path ..  "/Theme/ME")--for simulator loading window
 mount_vfs_texture_path  (current_mod_path ..  "/Textures/")
 mount_vfs_model_path    (current_mod_path ..  "/Shapes")
