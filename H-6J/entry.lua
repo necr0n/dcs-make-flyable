@@ -1,7 +1,7 @@
 declare_plugin("H-6J",
 {
 displayName     = _("H-6J"),
-developerName   =   "Eagle Dynamics",
+developerName   =   "Deka Ironwork Simulations and Eagle Dynamics",
 -- ..\DCSWorld\CoreMods\aircraft\ChinaAssetPack original plane def
 
 image     	 = "FC.bmp",
