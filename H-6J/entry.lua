@@ -2,7 +2,7 @@ declare_plugin("H-6J",
 {
 displayName     = _("H-6J"),
 developerName   =   "Eagle Dynamics",
--- ..\DCSWorld\Scripts\Database\planes\H-6J.lua original plane def
+-- ..\DCSWorld\CoreMods\aircraft\ChinaAssetPack original plane def
 
 image     	 = "FC.bmp",
 installed 	 = true, -- if false that will be place holder , or advertising
