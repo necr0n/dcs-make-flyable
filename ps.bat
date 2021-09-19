@@ -467,6 +467,16 @@ echo;
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  MQ-9 Reaper\Input\MQ-9 Reaper\joystick || echo %_errormsg%
    copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  MQ-9 Reaper\Input\MQ-9 Reaper\keyboard || echo %_errormsg%
 echo;
+:: H-6J
+echo;
+echo Starting H-6J configuration
+echo;
+echo Chinese Tu-16 licensed version, as of now with Su-25T avionics.
+echo;
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\joystick\*.lua"  H-6J\Input\H-6J\joystick || echo %_errormsg%
+   copy /V /L /Y "%_DCS%\Mods\aircraft\Su-25T\Input\su-25T\keyboard\*.lua"  H-6J\Input\H-6J\keyboard || echo %_errormsg%
+echo;
+echo;
 echo;
 :: S-3B
 echo;
